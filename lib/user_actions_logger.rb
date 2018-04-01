@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "user_actions_logger/user_actions_logger_tasks" if defined?(Rails)
+
 module UserActionsLogger
   extend ActiveSupport::Concern
 
