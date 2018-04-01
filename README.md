@@ -7,6 +7,7 @@
     
 2. Add 'loggings' table to your database
     
+    rails generate migration CreateLoggings user:string object:string action:string module_name:string created_at:datetime updated_at:datetime
     bundle exec rake db:migrate
 
 ### Basic Usage:
