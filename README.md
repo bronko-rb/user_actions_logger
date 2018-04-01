@@ -7,8 +7,6 @@
     
 2. Add 'loggings' table to your database
     
-    rake user_actions_logger:create_migration
-    
     bundle exec rake db:migrate
 
 ### Basic Usage:
