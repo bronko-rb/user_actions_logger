@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "user_actions_logger/version"
+require "user_actions_logger/railtie" if defined?(Rails)
+
 module UserActionsLogger
   extend ActiveSupport::Concern
 
