@@ -33,7 +33,8 @@ module UserActionsLogger
     log.user = who_did_it
     log.object = watch_for.to_json
     log.action = what_did
-    log.module_name = where_did
+    log.loggable_type = where_did
+    log.loggable_id = watch_for.id
     log.save
   end
 end
