@@ -2,7 +2,7 @@ namespace :user_actions_logger do
   # rake user_actions_logger:install
 
   task install: :environment do
-    `rails generate model Logging user object action module_name loggable_id:integer loggable_type`
+    `rails generate model Logging user object:jsonb action loggable_id:integer loggable_type`
     puts "model and migration created. run: 'rake db:migrate'"
   end
   task uninstall: :environment do
